@@ -4,7 +4,14 @@ version = "0.1.0"
 description = "Privacy Engineering course mini project 2: Loss-based Membership Inference Attack on Machine Learning Models"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["torch>=2.2.2", "torchvision>=0.17.2", "numpy<2.0.0"]
+dependencies = [
+    "torch>=2.2.2",
+    "torchvision>=0.17.2",
+    "numpy<2.0.0",
+    "dotenv>=0.9.9",
+    "matplotlib>=3.10.7",
+    "scikit-learn>=1.7.2",
+]
 
 [tool.uv]
 required-environments = [
