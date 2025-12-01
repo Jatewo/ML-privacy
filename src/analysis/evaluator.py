@@ -153,7 +153,7 @@ class AttackEvaluator:
                 best_thresh = real_thresh
 
         return {
-            "auc": roc_auc,
-            "best_accuracy": best_acc,
+            "auc": float(roc_auc),
+            "best_accuracy": float(best_acc),
             "best_threshold": best_thresh,
         }
