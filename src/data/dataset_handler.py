@@ -43,7 +43,7 @@ class DatasetHandler:
         self.dataset_name = dataset_name.lower()
         self.batch_size = batch_size
         self.root_dir = root_dir
-        
+
         os.makedirs(self.root_dir, exist_ok=True)
 
         self.transform = transforms.Compose(
