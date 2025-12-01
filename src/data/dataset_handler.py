@@ -3,6 +3,7 @@
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader, Subset
 import numpy as np
+import os
 
 type DatasetType = datasets.CIFAR10 | datasets.MNIST
 
@@ -42,6 +43,8 @@ class DatasetHandler:
         self.dataset_name = dataset_name.lower()
         self.batch_size = batch_size
         self.root_dir = root_dir
+        
+        os.makedirs(self.root_dir, exist_ok=True)
 
         self.transform = transforms.Compose(
             [
