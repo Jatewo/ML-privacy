@@ -210,3 +210,7 @@ __marimo__/
 # Data folder
 data/*
 !data/.gitkeep
+
+# Results folder
+results/*
+!results/.gitkeep
