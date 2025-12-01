@@ -1,1 +1,1 @@
-# Configuration file for the ML-privacy project
+"""Configuration file for the ML-privacy project."""
